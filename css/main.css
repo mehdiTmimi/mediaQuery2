@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+    padding: 10px 5px;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1000000;
+}
+@media screen and (max-width:750px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        margin-bottom: 10px;
+    }
+}
+header ol{
+    display: flex;
+    
+}
+header li{
+    display: block;
+    color:white;
+    padding: 5px 15px;
+}
+header li:hover
+{
+    background: white;
+    color:black;
+}
+header a{
+    color: inherit;
+}
+@media screen and (max-width:460px) {
+    header ol{
+       flex-direction: column;
+        
+    }
+    header li{
+        margin: 10px;
+        background: white;
+        color: black;
+    }
+    header{
+        position: static;
+    }
+}
+#accueil{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imgs/accueil.jpeg);
+    background-size: cover;
+    color: white;
+}
+#accueil h2{
+    font-size: 50px;
+}
+#accueil p{
+    text-align: center;
+    padding: 30px;
+}
+#section2,#section3,#section4,#section5{
+    height: 100vh;
+    padding-top: 60px;
+}
+#section2{
+    display: flex;
+    align-items: center;
+    
+  
+}
+#section2 article{
+    flex:1;
+    border: 1px solid black;
+    margin: 0px 10px;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: auto;
+ 
+}
+#section2 article h3{
+    background: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
+#section2 article p{
+ 
+    color: black;
+    text-align: justify;
+    padding: 10px 5px;
+}
+@media screen and (max-width:500px) {
+    #section2,#section3,#section4,#section5{
+        height: unset;
+       
+    }
+    #section2{
+        flex-direction: column;
+    }
+    #section2 article{
+        margin: 20px 50px;
+        
+    }
+}
+
+

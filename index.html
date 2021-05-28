@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    </style>
+    <!-- https://fontawesome.com/v4.7/icons/ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>Media Query example</h1>
         <nav>
             <ol>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#section2">section 2</a></li>
-                <li><a href="#section3">section 3</a></li>
-                <li><a href="#section4">section 4</a></li>
-                <li><a href="#section5">section 5</a></li>
+                <li class="arrow"><a href="#header">
+                    <img src="imgs/arrow.ico">
+                </a></li>
             </ol>
         </nav>
     </header>
@@ -30,40 +35,49 @@
             </p>
         </section>
         <section id="section2">
-            <article>
-                <h3>article 1</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta natus distinctio rerum laborum eveniet ea impedit sunt. Repellat ipsum dolorem eligendi nam ut odit, et sunt sint in reiciendis!</p>
-            </article>
-            <article>
-                <h3>article 2</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eveniet aliquam, dignissimos distinctio veniam praesentium aut sed consequuntur vero neque maxime possimus similique quisquam veritatis officia, placeat sequi officiis eos!</p>
-            </article>
-            <article>
-                <h3>article 3</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt, temporibus iste eveniet labore molestias nulla quam numquam a magni dolores deleniti ducimus officia ut, est expedita dicta cumque qui?</p>
-            </article>
+            <h2>Section 2</h2>
+            <div>
+                <article>
+                    <h3>article 1</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta natus distinctio rerum laborum eveniet ea impedit sunt. Repellat ipsum dolorem eligendi nam ut odit, et sunt sint in reiciendis!</p>
+                </article>
+                <article>
+                    <h3>article 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eveniet aliquam, dignissimos distinctio veniam praesentium aut sed consequuntur vero neque maxime possimus similique quisquam veritatis officia, placeat sequi officiis eos!</p>
+                </article>
+                <article>
+                    <h3>article 3</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt, temporibus iste eveniet labore molestias nulla quam numquam a magni dolores deleniti ducimus officia ut, est expedita dicta cumque qui?</p>
+                </article>
+            </div>
         </section>
-        <section id="section3">
-            Section3
-        </section>
-        <section id="section4">
-            Section4
-        </section>
-        <section id="section5">
-            Section5
-        </section>
+       
     </main>
     <footer>
-        <p>@copyright</p>
-        <nav>
-            <ol>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">section 2</a></li>
-                <li><a href="#">section 3</a></li>
-                <li><a href="#">section 4</a></li>
-                <li><a href="#">section 5</a></li>
-            </ol>
-        </nav>
+        <div class="div1Footer">
+            <nav>
+                <ol>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">section 2</a></li>
+                    
+                </ol>
+            </nav>
+            <div class="socialMedia">
+                <div>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>@copyright</p>
+            
+        </div>
     </footer>
 </body>
 </html>

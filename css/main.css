@@ -1,128 +1,167 @@
 *{
-    margin: 0px;
     padding: 0px;
-    font-style: none;
+    margin: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'EB Garamond', serif;
 }
 html{
     scroll-behavior: smooth;
 }
 header{
-    background: black;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
-    color:white;
     align-items: center;
     padding: 10px 5px;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0px;
-    z-index: 1000000;
-}
-@media screen and (max-width:750px) {
-    header{
-        flex-direction: column;
-    }
-    header h1{
-        margin-bottom: 10px;
-    }
 }
 header ol{
     display: flex;
-    
 }
 header li{
-    display: block;
-    color:white;
-    padding: 5px 15px;
+display: block;
+color: white;
+padding: 5px 15px;
 }
-header li:hover
-{
-    background: white;
-    color:black;
-}
-header a{
+header li:hover{
+    background-color: white;
+    color: black;
+    }
+header a {
     color: inherit;
-}
-@media screen and (max-width:460px) {
-    header ol{
-       flex-direction: column;
-        
-    }
-    header li{
-        margin: 10px;
-        background: white;
-        color: black;
-    }
-    header{
-        position: static;
-    }
 }
 #accueil{
     height: 100vh;
+    padding-top: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-image: url(../imgs/accueil.jpeg);
+    background: url(../imgs/moon.jpeg);
     background-size: cover;
-    color: white;
+    color:white;
 }
 #accueil h2{
-    font-size: 50px;
+    font-size: 3em;
+    text-transform: uppercase;
+    width: 43%;
+    text-align: center;
+    background-color: #bdbaba61;
 }
 #accueil p{
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px 30px;
+    width: 80%;
     text-align: center;
-    padding: 30px;
-}
-#section2,#section3,#section4,#section5{
-    height: 100vh;
-    padding-top: 60px;
+    background-color: #bdbaba61;
 }
 #section2{
+
+    padding-top: 60px;
+}
+#section2>div{
     display: flex;
-    align-items: center;
-    
-  
+    flex-direction: column;
+ 
+    padding: 0px 10px;
 }
 #section2 article{
-    flex:1;
-    border: 1px solid black;
-    margin: 0px 10px;
-    height: 60vh;
-    border-radius: 10px;
-    overflow: auto;
- 
+flex:1;
+width: 33%;
+border: 1px solid black;
+
 }
-#section2 article h3{
-    background: black;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    color: white;
+#section2 h2{
     text-align: center;
-    padding: 20px;
-    position: sticky;
-    top: 0px;
+    background:lightslategray;
+    color: white;
+    margin-bottom: 10px;
 }
-#section2 article p{
- 
-    color: black;
+#section2 h3{
+    text-align: center;
+    text-transform: capitalize;
+    background: lightslategray;
+    color: white;
+}
+#section2 p{
+    padding: 5px 10px;
     text-align: justify;
-    padding: 10px 5px;
 }
-@media screen and (max-width:500px) {
-    #section2,#section3,#section4,#section5{
-        height: unset;
-       
+#section2 article:nth-child(2)
+{
+    align-self: center;
+}
+#section2 article:nth-child(3)
+{
+    align-self: flex-end;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+}
+.div1Footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer ol{
+    display: flex;
+}
+footer li{
+display: block;
+color: white;
+padding: 5px 15px;
+}
+
+footer a {
+    color: inherit;
+}
+.socialMedia{
+    display: flex;
+}
+.socialMedia div{
+    margin: 5px 10px;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+.arrow{
+   
+    opacity:1;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+   
+    height: 50px;
+    width: 50px;
+    visibility: hidden;
+}
+.arrow img{
+    width: 50px;
+    height: 50px;
     }
-    #section2{
+@media screen and (max-width:450px) {
+    header{
         flex-direction: column;
+        position: static;
     }
-    #section2 article{
-        margin: 20px 50px;
-        
+    header nav{
+        margin-top: 10px;
+    }
+    .arrow{
+       visibility: visible;
     }
 }
-
-

@@ -1,9 +1,8 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'EB Garamond', serif;
 }
 html{
     scroll-behavior: smooth;
@@ -14,154 +13,128 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5px;
+    padding: 15px 5px;
     position: fixed;
+    top:0px;
     width: 100%;
-    top: 0px;
 }
 header ol{
     display: flex;
+    list-style-type: none;
 }
 header li{
-display: block;
-color: white;
-padding: 5px 15px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: white;
+    transition-duration: 1s;
+}
+header li a{
+    color: inherit;
 }
 header li:hover{
-    background-color: white;
     color: black;
-    }
-header a {
-    color: inherit;
+    background: white;
 }
 #accueil{
     height: 100vh;
-    padding-top: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: url(../imgs/moon.jpeg);
     background-size: cover;
-    color:white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.392);
+    background-blend-mode: darken;
 }
 #accueil h2{
-    font-size: 3em;
-    text-transform: uppercase;
-    width: 43%;
-    text-align: center;
-    background-color: #bdbaba61;
+    font-size: 4em;
 }
 #accueil p{
-    font-size: 1em;
-    margin: 5px;
-    padding: 5px 30px;
-    width: 80%;
-    text-align: center;
-    background-color: #bdbaba61;
+    padding: 10px 40px;
 }
 #section2{
-
-    padding-top: 60px;
+    padding: 10px 20px;
+    padding-top: 80px;
 }
 #section2>div{
     display: flex;
     flex-direction: column;
- 
-    padding: 0px 10px;
 }
 #section2 article{
-flex:1;
-width: 33%;
-border: 1px solid black;
-
+  width: 33.33%;
+  border: 1px solid black;
+    
+}
+#section2 article h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
 }
 #section2 h2{
     text-align: center;
-    background:lightslategray;
-    color: white;
-    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
 }
-#section2 h3{
-    text-align: center;
-    text-transform: capitalize;
-    background: lightslategray;
-    color: white;
-}
-#section2 p{
-    padding: 5px 10px;
+#section2 article p{
+    padding: 5px;
     text-align: justify;
 }
-#section2 article:nth-child(2)
-{
-    align-self: center;
+#section2 article:nth-child(2){
+    align-self: center;  
+  }
+  #section2 article:nth-child(3){
+    align-self: flex-end;  
+  }
+.up{
+    display: none;
 }
-#section2 article:nth-child(3)
-{
-    align-self: flex-end;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    background: black;
-    color: white;
-}
-.div1Footer{
-    display: flex;
-    justify-content: space-between;
-}
-footer ol{
-    display: flex;
-}
-footer li{
-display: block;
-color: white;
-padding: 5px 15px;
-}
-
-footer a {
-    color: inherit;
-}
-.socialMedia{
-    display: flex;
-}
-.socialMedia div{
-    margin: 5px 10px;
-}
-footer p{
-    text-align: center;
-    padding: 10px;
-}
-
-.arrow{
-   
-    opacity:1;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-   
-    height: 50px;
-    width: 50px;
-    visibility: hidden;
-}
-.arrow img{
-    width: 50px;
-    height: 50px;
+@media screen and (max-width:640px) {
+    .up{
+        display: block;
+        position: fixed;
+        bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 20px;
+        background: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        color: black;
+        border:1px solid black;
     }
-@media screen and (max-width:450px) {
     header{
         flex-direction: column;
         position: static;
     }
     header nav{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:370px) {
+    header ol{
+        flex-direction: column;
+    }
+    header li{
         margin-top: 10px;
     }
-    .arrow{
-       visibility: visible;
+}
+@media screen and (max-width:520px) {
+    #section2>div{
+        align-items: center;
     }
+    #section2 article{
+        width: 80%;
+        margin-top: 20px;
+    }
+    #section2 article:nth-child(2){
+        align-self: unset;  
+      }
+      #section2 article:nth-child(3){
+        align-self: unset;  
+      }
 }
